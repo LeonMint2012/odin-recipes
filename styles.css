@@ -16,3 +16,8 @@
     text-align: center;
     background-color: plum;    
 }
+
+.background {
+    
+    background: url("images/pinacolada.jpg"), #6DB3F2 ;
+}
