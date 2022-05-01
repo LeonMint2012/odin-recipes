@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rezept anlegen</title>
+</head>
+<body>
+    <header>
+        <h1>Neues Rezept anlegen</h1>
+    </header>
+    <main>
+        <h2>Allgemeine Rezeptdaten</h2>
+        <form>
+            <fieldset>
+                <legend>allgemeine Daten</legend>
+                <label>Kategorie
+                    <select name="Essenskategorie">
+                        <option value="süß">süß</option>
+                        <option value="herzhaft">herzhaft</option>
+                        <option value="neutral">neutral</option>
+                    </select>
+                </label><br>
+                <label>Name
+                    <input type="text" size="20">
+                </label><br>
+                <label>Beschreibung
+                    <input type="text" value="kleine Rezeptbeschreibung">
+                </label><br>
+                <label>Zeit (in Min)
+                    <input type="number">
+                </label><br>
+                <label>Anzahl Personen:
+                    <input type="number">
+                </label>
+            </fieldset>
+        </form>
+
+        <h2>Benötigte Zutaten</h2>
+        <form>
+            <fieldset>
+                <legend>Zutaten</legend>
+                <label>Menge
+                    <input type="number" value="Anzahl">
+                </label>
+                <label>Einheit
+                    <input type="text">
+                </label>
+                <label>Name
+                    <input type="text">
+                </label>
+            </fieldset><br>
+        </form>
+        <button type="button">Weitere Zutat hinzufügen</button>
+        
+        <h2>Schritt für Schritt Anleitung</h2>
+        <form>
+            <fieldset>
+                <legend>Anleitung</legend>
+                <label>Anleitung
+                    <textarea cols="60" rows="8" maxlength="500"></textarea>
+                </label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <small>&copy; Rezeptseite</small>
+    </footer>
+</body>
+</html>
